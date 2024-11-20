@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family: "Josefin Sans";
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 1rem;
+}
+
+.card-container {
+    background-color: greenyellow;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 30%;
+    height: 100%;
+    box-shadow: 1rem 1rem white;
+    border: 0.15rem solid black;
+    padding: 1rem 1rem;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 0.65rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    align-items: center;
+    
+
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: aqua;
+    align-items: center;
+}
+
+.designer-description {
+    font-size: 2.45rem;
+    font-weight: 400;
+}
+
+.designer-quote {
+    font-style: italic;
+    font-size: 1.35rem;
+}
+
+.card-button {
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+    /* biome-ignore lint/a11y/useGenericFontNames: <explanation> */
+    font-family: "Josefin Sans";
+    font-size: 1rem;
+    background-color: cyan;
+}
+
+.card-button:hover {
+    background-color: red;
+    color:cyan;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    h1 {
+        font-size: 1.15rem;
+    }
+
+    .card-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .designer-quote {
+        font-size: 0.9rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
